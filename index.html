@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,7 +25,7 @@
           <img src="img/psatha_for_ps-b.png" class="brand-logo" alt="Logo" />
         </a>
       </div>
-      <img src="img/logo text.png" alt="Logo text" id="logo-text" />
+      <img src="img/logo-text.png" alt="Logo text" id="logo-text" />
       <div id="navbar">
         <ul>
           <li class="primary-font">
@@ -55,8 +55,9 @@
           Psatha je restoran autorske kuhinje sa akcentom na svežim i
           kvalitetnim namirnicama.
         </p>
-        <a href="menu.html" target="blank"
-          ><button class="btn-primary">Pogledaj naš meni</button></a
+        <br />
+        <a href="menu.html" class="btn-primary" target="blank"
+          >Pogledaj naš meni</a
         >
       </div>
       <a href="#about"><i class="fas fa-arrow-down fa-3x primary-color"></i></a>
@@ -82,7 +83,7 @@
     <!-- INGREDIENTS -->
     <div id="ingredients" class="bac">
       <div class="container">
-        <div id="ingredients-wrap">
+        <div class="ingredients-wrap">
           <small class="primary-font">PSATHA</small>
           <h1 class="primary-font">SASTOJCI</h1>
           <p class="primary-font">
@@ -90,12 +91,11 @@
             nabavljamo svaki dan iz tek ubranih bašta naših vrednih
             zemljoradnika.
           </p>
-          <a href="menu.html"
-            ><button class="btn-primary">Pogledaj naš meni</button></a
-          >
+          <br />
+          <a class="btn-primary" href="menu.html">Pogledaj naš meni</a>
         </div>
-        <div id="ingredients-wrap">
-          <img src="img/ingredients.jpg" width="100%" alt="" />
+        <div class="ingredients-wrap">
+          <img src="img/ingredients.jpg" alt="" />
         </div>
         <div class="clear"></div>
       </div>
@@ -265,7 +265,7 @@
                 name="name"
                 id="name"
                 placeholder="IME"
-              /><input type="date" placeholder="DD/MM/YYYY" name="" id="" />
+              /><input type="date" name="date" id="r-date" />
               <input
                 type="number"
                 name="seats"
@@ -277,10 +277,15 @@
               <input
                 type="number"
                 placeholder="BROJ TELEFONA"
-                name=""
-                id=""
-              /><input type="time" placeholder="TIME" name="time" id="time" />
-              <input type="email" placeholder="E-MAIL" name="time" id="time" />
+                name="phone"
+                id="phone"
+              /><input type="time" name="time" id="time" />
+              <input
+                type="email"
+                placeholder="E-MAIL"
+                name="email"
+                id="email"
+              />
             </div>
             <div class="clear"></div>
             <textarea
@@ -290,7 +295,9 @@
               placeholder="DODATNE INFORMACIJE"
               rows="10"
             ></textarea>
-            <button type="submit" class="btn-primary">RESERVIŠI</button>
+            <br />
+            <br />
+            <a href="#" class="btn-primary">RESERVIŠI</a>
           </form>
         </div>
       </div>
@@ -307,9 +314,9 @@
             najprestižnijim restoranima širom sveta, sada je sa nama da podeli
             najprefinjenije ukuse i tajne koje je otkrio tokom svoje karijere.
           </p>
-          <a href="menu.html"
-            ><button class="btn-primary">POGLEDAJ NAŠ MENI</button></a
-          >
+          <br />
+          <br />
+          <a class="btn-primary" href="menu.html">POGLEDAJ NAŠ MENI</a>
         </div>
         <div class="chef-wrap">
           <img src="img/chef2.png" alt="main chef" />
@@ -336,7 +343,7 @@
           </p>
         </div>
         <div class="primary-font footer-col">
-          <img src="img/logo text.png" width="150px" alt="" />
+          <img src="img/logo-text.png" width="150px" alt="" />
           <p class="footer-text text-center">
             Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
             san i napravi svoj restoran. Za najpuniji i najsočniji ukus tu su
@@ -344,6 +351,7 @@
             bašta naših vrednih zemljoradnika.
           </p>
         </div>
+
         <div class="primary-font footer-col">
           <p class="text-white text-end f-head">KORISNI LINKOVI</p>
           <a href="index.html" class="footer-text">Pocetna</a>
@@ -357,10 +365,10 @@
           <a class="text-white" href="#"
             ><i class="fab fa-facebook-square"></i
           ></a>
-          <a class="text-white" href="#"
-            ><i class="fab fa-google-plus-square"></i
+          <a class="text-white" href="sitemap.xml"
+            ><i class="fas fa-sitemap"></i
           ></a>
-          <a class="text-white" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="text-white" href="rss.xml"><i class="fas fa-rss"></i></a>
           <a class="text-white" href=""><i class="fab fa-instagram"></i></a>
         </div>
         <div class="text-center f-copy text-white primary-font">

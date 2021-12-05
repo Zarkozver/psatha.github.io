@@ -90,10 +90,10 @@
   position: relative;
   width: 100%;
   padding: 150px 0px 250px 0px;
-  background-image: url("../img/home-photo1.jpg");
+  background-image: url("../img/showcase-v4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -170px;
+  background-position: 0 -0px;
 }
 .showcase-text {
   text-transform: uppercase;
@@ -127,11 +127,13 @@
   border-radius: 0;
   padding: 20px 30px;
   font-size: 12px;
-  margin-top: 30px;
+  background-color: #fff;
   transition: all 0.3s;
   text-transform: uppercase;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
+
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 4px;
 }
 a {
@@ -180,16 +182,19 @@ a {
   padding: 0px 0;
   background-color: #99875b;
 }
-#ingredients-wrap {
+.ingredients-wrap {
   width: 50%;
   float: left;
 }
-#ingredients-wrap:nth-child(1) {
+.ingredients-wrap:nth-child(1) {
   margin-top: 80px;
 }
-#ingredients-wrap p {
+.ingredients-wrap p {
   margin: 20px 0;
   color: #363636;
+}
+.ingredients-wrap img {
+  width: 100%;
 }
 #quote {
   position: relative;
@@ -426,6 +431,8 @@ a {
   object-fit: cover;
   width: 360px;
   height: 360px;
+  overflow: hidden;
+  transition: all 0.2s;
   margin: 0 10px;
   float: left;
   margin-bottom: 20px;
@@ -458,4 +465,10 @@ a {
 }
 .feature img {
   width: 40%;
+}
+.gallery-img:hover {
+  transform: scale(1.04);
+}
+#gallery h1 {
+  letter-spacing: 3px;
 }

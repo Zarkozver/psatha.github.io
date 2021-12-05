@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Psatha - Restoran i Bar!</title>
+<link>https://zarkozver.github.io</link>
+<description>Pratite dešavanja našeg restorana.</description>
+<item>
+<title>Novo na meniju.</title>
+<link>https://zarkozver.github.io/menu.html</link>
+<description>Pratite nova jela sa našeg menija.</description>
+</item>
+<item>
+<title>Galerija restorana.</title>
+<link>https://zarkozver.github.io/gallery.html</link>
+<description>Galerija našeg restorana i našeg tima.</description>
+</item>
+</channel>
+</rss>
