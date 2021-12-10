@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="img/psatha_for_ps-b.png"
-      type="image/x-icon"
+    <meta name="author" content="mailto:zarko.jovic.20.21@ict.edu.rs" />
+    <meta
+      name="keywords"
+      content="Restoran, Psatha, Hrana, Kuvanje, Jelo, Dezerti, Piće"
     />
+    <meta
+      name="description"
+      content="Psatha je restoran i bar sa najprefinjenijim i najukusnijim jelima po najpristupačnijoj ceni"
+    />
+    <meta name="copyright" content="Sva prava zadržava Psatha 2021" />
+    <link rel="shortcut icon" href="img/psatha_for_ps-b.png" type="image/png" />
     <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
@@ -55,10 +61,11 @@
           Psatha je restoran autorske kuhinje sa akcentom na svežim i
           kvalitetnim namirnicama.
         </p>
-        <br />
-        <a href="menu.html" class="btn-primary" target="blank"
-          >Pogledaj naš meni</a
-        >
+        <div class="mt-3">
+          <a href="menu.html" class="btn-primary" target="blank"
+            >Pogledaj naš meni</a
+          >
+        </div>
       </div>
       <a href="#about"><i class="fas fa-arrow-down fa-3x primary-color"></i></a>
     </div>
@@ -72,8 +79,8 @@
           san i napravi svoj restoran.
         </p>
         <div id="about-images">
-          <img src="img/cook.jpg" alt="" />
-          <img src="img/home-photo.jpeg" alt="" />
+          <img src="img/cook.jpg" alt="cook" />
+          <img src="img/home-photo.jpeg" alt="dish" />
           <div class="clear"></div>
         </div>
         <small class="primary-font info-color">ZARKO JOVIC</small>
@@ -91,11 +98,12 @@
             nabavljamo svaki dan iz tek ubranih bašta naših vrednih
             zemljoradnika.
           </p>
-          <br />
-          <a class="btn-primary" href="menu.html">Pogledaj naš meni</a>
+          <div class="mt-5">
+            <a class="btn-primary" href="menu.html">Pogledaj naš meni</a>
+          </div>
         </div>
         <div class="ingredients-wrap">
-          <img src="img/ingredients.jpg" alt="" />
+          <img src="img/ingredients.jpg" alt="ingredients" />
         </div>
         <div class="clear"></div>
       </div>
@@ -112,10 +120,10 @@
       </div>
     </div>
     <!-- MENU -->
-    <div id="menu">
+    <div class="bg-secondary menu">
       <div class="container text-center">
         <small class="primary-font info-color">PSATHA</small>
-        <h1 class="primary-font">MENI</h1>
+        <h1 class="primary-font">GLAVNA JELA</h1>
         <p class="primary-font">
           Uz odabir tradicionalnih recepata koje usavršavamo, naša glavna jela
           su rezultat ljubavi prema finoj domaćoj kuhinji i brižljivo odabranim
@@ -126,7 +134,7 @@
             <div class="dish-info primary-font">
               OMLET
               <hr />
-              <p>3 jaja, sunka, sir</p>
+              <p>3 jaja, šunka, sir</p>
             </div>
             <div class="dish-price primary-font">3.00$</div>
             <div class="clear"></div>
@@ -144,7 +152,7 @@
             <div class="dish-info primary-font">
               BURGER
               <hr />
-              <p>Junece meso, krastavici, sir, iceberg salata</p>
+              <p>Juneće meso, krastavici, sir, iceberg salata</p>
             </div>
             <div class="dish-price primary-font">5.00$</div>
             <div class="clear"></div>
@@ -173,7 +181,7 @@
             <div class="dish-info primary-font">
               PIZZA
               <hr />
-              <p>Sunka, pelat, pecurke, kackavalj</p>
+              <p>Šunka, pelat, pečurke, kačkavalj</p>
             </div>
             <div class="dish-price primary-font">10.00$</div>
             <div class="clear"></div>
@@ -182,7 +190,7 @@
             <div class="dish-info primary-font">
               SUSHI
               <hr />
-              <p>Pirinac, riba, povrce, soja sos</p>
+              <p>Pirinač, riba, povrće, soja sos</p>
             </div>
             <div class="dish-price primary-font">9.00$</div>
             <div class="clear"></div>
@@ -192,7 +200,7 @@
               BURRITO
               <hr />
               <p>
-                Pirinac, pinto pasulj, pico de gallo, govedje meso, pikantni
+                Pirinač, pinto pasulj, pico de gallo, govedje meso, pikantni
                 majonez
               </p>
             </div>
@@ -295,42 +303,39 @@
               placeholder="DODATNE INFORMACIJE"
               rows="10"
             ></textarea>
-            <br />
-            <br />
-            <a href="#" class="btn-primary">RESERVIŠI</a>
+            <div class="mt-5">
+              <a href="#" class="btn-primary mt-5">RESERVIŠI</a>
+            </div>
           </form>
         </div>
       </div>
     </div>
     <!-- CHEF -->
     <div id="chef">
-      <div class="container">
-        <div class="chef-wrap">
-          <small class="primary-font">PSATHA</small>
-          <h1 class="primary-font">NAŠ ŠEF KUHINJE</h1>
-          <p class="primary-font">
-            Kao našeg glavnog odgovornogu kuhinji dolazi nam čovek iz zemlje
-            izlazećeg sunca - Taj Li. Preko 20 godina radnog iskustva u
-            najprestižnijim restoranima širom sveta, sada je sa nama da podeli
-            najprefinjenije ukuse i tajne koje je otkrio tokom svoje karijere.
-          </p>
-          <br />
-          <br />
+      <div class="chef-wrap">
+        <small class="primary-font">PSATHA</small>
+        <h1 class="primary-font">NAŠ ŠEF KUHINJE</h1>
+        <p class="primary-font text-muted mt-1">
+          Kao našeg glavnog odgovornogu kuhinji dolazi nam čovek iz zemlje
+          izlazećeg sunca - Taj Li. Preko 20 godina radnog iskustva u
+          najprestižnijim restoranima širom sveta, sada je sa nama da podeli
+          najprefinjenije ukuse i tajne koje je otkrio tokom svoje karijere.
+        </p>
+        <div class="mt-5">
           <a class="btn-primary" href="menu.html">POGLEDAJ NAŠ MENI</a>
         </div>
-        <div class="chef-wrap">
-          <img src="img/chef2.png" alt="main chef" />
-        </div>
-        <div class="clear"></div>
+      </div>
+      <div class="chef-wrap">
+        <img src="img/chef2.png" alt="main chef" />
       </div>
     </div>
     <!-- FOOTER -->
     <footer id="footer">
       <div class="container">
         <div class="primary-font footer-col">
-          <p class="text-white f-head">CONTACT</p>
+          <p class="text-white f-head">KONTAKT</p>
           <p class="footer-text">
-            <i class="fas fa-phone"> </i> +381 69 3639700
+            <i class="fas fa-phone"> </i> +381 69 1234500
           </p>
           <p class="footer-text">
             <i class="fas fa-envelope"> </i> zarko.jovic.20.21@gmail.com
@@ -343,7 +348,7 @@
           </p>
         </div>
         <div class="primary-font footer-col">
-          <img src="img/logo-text.png" width="150px" alt="" />
+          <img src="img/logo-text.png" class="footer-image" alt="footer-logo" />
           <p class="footer-text text-center">
             Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
             san i napravi svoj restoran. Za najpuniji i najsočniji ukus tu su
@@ -362,14 +367,21 @@
         </div>
         <div class="clear"></div>
         <div id="social-media" class="text-center text-white">
-          <a class="text-white" href="#"
+          <a class="text-white" target="blank" href="https://facebook.com"
             ><i class="fab fa-facebook-square"></i
           ></a>
-          <a class="text-white" href="sitemap.xml"
+          <a class="text-white" target="blank" href="sitemap.xml"
             ><i class="fas fa-sitemap"></i
           ></a>
-          <a class="text-white" href="rss.xml"><i class="fas fa-rss"></i></a>
-          <a class="text-white" href=""><i class="fab fa-instagram"></i></a>
+          <a class="text-white" target="blank" href="rss.xml"
+            ><i class="fas fa-rss"></i
+          ></a>
+          <a
+            class="text-white"
+            target="blank"
+            href="https://instagram.com/jovic_zarko"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
         <div class="text-center f-copy text-white primary-font">
           &copy; 2021 PSATHA

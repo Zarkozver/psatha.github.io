@@ -33,6 +33,21 @@
 .clear {
   clear: both;
 }
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.text-muted {
+  color: #363636;
+}
+.py-5 {
+  padding: 50px 0;
+}
 #brand-name {
   background-color: black;
   border-radius: 50%;
@@ -131,8 +146,8 @@
   transition: all 0.3s;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.8);
 
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Open Sans", sans-serif;
   letter-spacing: 4px;
 }
@@ -231,7 +246,7 @@ a {
   width: 800px;
   margin: 0 auto;
 }
-#menu p {
+.menu p {
   width: 600px;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.5);
@@ -258,7 +273,7 @@ a {
 .dish-wrap {
   margin-bottom: 30px;
 }
-#menu h1 {
+.menu h1 {
   margin: 10px 0 20px 0;
   letter-spacing: 6px;
 }
@@ -329,29 +344,26 @@ a {
   margin: 0 auto;
 }
 #chef {
-  padding: 50px 0;
-  position: relative;
   background-color: #99875b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .chef-wrap {
-  width: 50%;
-  float: left;
+  width: 35%;
 }
 .chef-wrap img {
   width: 400px;
-  bottom: 0px;
-  right: 300px;
-  position: absolute;
+  margin-bottom: -4px;
+  margin-left: 200px;
 }
 #chef h1 {
   letter-spacing: 6px;
 }
-#chef p {
-  margin-top: 15px;
-}
 #footer {
   padding: 50px 0 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #191816;
 }
 .black-background {
   background-color: #000;
@@ -471,4 +483,10 @@ a {
 }
 #gallery h1 {
   letter-spacing: 3px;
+}
+.footer-image {
+  width: 150px;
+}
+#footer .container {
+  padding: 0;
 }
