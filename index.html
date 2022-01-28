@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
-    <title>Vezba</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <title>Žarko Jović - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div id="logo">
-        <a href="#"><img src="img/logo-transparent.png" alt="logo" /></a>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header-wrap">
+        <div id="logo">
+          <h1>Zarko Jovic</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Početna</a></li>
+            <li><a href="#">O meni</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
-      <div id="collapse">
-        <p>
-          <a href="#" onclick="show()"><i class="fas fa-2x fa-bars"></i></a>
-        </p>
-      </div>
-      <ul id="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-      </ul>
-    </nav>
-    <div id="showcase">
+    </header>
+    <!-- END HEADER -->
+    <!-- COVER START -->
+    <div id="cover">
       <div class="dark-overlay"></div>
-      <div id="showcase-text">
-        <h1 class="text-white text-center">Ovo je naslov!</h1>
-        <p class="text-white text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-          explicabo?
-        </p>
-        <p class="text-white text-center"><a href="#"> Click me!</a></p>
+      <div id="cover-text">
+        <h1>Ja sam Žarko Jović</h1>
+        <h2>Web Developer / Designer / Sigma</h2>
       </div>
     </div>
-    <div id="features">
-      <h1 class="text-center">Ono najjace</h1>
-      <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-        delectus sed ipsum repellendus suscipit quisquam ad quaerat doloremque
-        nesciunt eligendi.
-      </p>
-      <div id="features-wrap">
-        <div class="feature">
-          <p class="text-center"><i class="fas fa-3x fa-bars"></i></p>
-          <h2 class="text-center">Feature title</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem!
-          </p>
-        </div>
-        <div class="feature">
-          <p class="text-center"><i class="fas fa-3x fa-bars"></i></p>
-          <h2 class="text-center">Feature title</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem!
-          </p>
-        </div>
-        <div class="feature">
-          <p class="text-center"><i class="fas fa-3x fa-bars"></i></p>
-          <h2 class="text-center">Feature title</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem!
-          </p>
+    <!-- COVER END -->
+    <!-- ABOUT START -->
+    <div id="about">
+      <div class="container">
+        <h2 class="title">O MENI</h2>
+        <p class="desc">
+          Web developer with 3+ years of experience with ability to efficiently
+          communicate and deliver high-quality client requests. Experienced in
+          <span> quickly</span> and <span> efficiently</span> troubleshooting
+          technical problems. Ability to multi-task and give technical
+          assistance when in need. Having a very good customer service skills
+          and excellent communication for non-technical users to understand.
+        </p>
+        <div id="info">
+          <div id="personal">
+            <img src="img/person-square.jpg" alt="Person" />
+            <p class="info-p"><span>Ime : </span> Žarko Jović</p>
+            <p class="info-p"><span>Datum rodjenja : </span> 13.02.2003</p>
+            <p class="info-p"><span>Phone number : </span> 069/ 363-9700</p>
+            <p class="info-p">
+              <span>Email : </span> zarko.jovic.20.21@ict.edu.rs
+            </p>
+          </div>
+          <div id="skills">
+            <h2>SKILLS</h2>
+            <div class="skill-row">
+              <h4>HTML5 & CSS3</h4>
+              <h4>95%</h4>
+            </div>
+            <progress value="95" max="100">95%</progress>
+            <div class="skill-row">
+              <h4>PHP</h4>
+              <h4>87%</h4>
+            </div>
+            <progress value="87" max="100">87%</progress>
+            <div class="skill-row">
+              <h4>LARAVEL</h4>
+              <h4>80%</h4>
+            </div>
+            <progress value="80" max="100">80%</progress>
+            <div class="skill-row">
+              <h4>JAVASCRIPT</h4>
+              <h4>70%</h4>
+            </div>
+            <progress value="70" max="100">70%</progress>
+          </div>
         </div>
       </div>
     </div>
   </body>
-
-  <script>
-    function show() {
-      let x = document.getElementById("navbar");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
 </html>

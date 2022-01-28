@@ -1,116 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+$primary-color: #0fb953;
+$dark: rgb(20, 20, 20);
+$white: #fff;
+$dark-gray: #14141e;
+$light-gray: #1c1b29;
+$muted: #afafaf;
 * {
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
-  list-style-type: none;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.text-white {
-  color: white;
+body {
+  background-color: $dark-gray;
 }
-.text-center {
-  text-align: center;
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+// HEADER CSS
+header {
   position: relative;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid $white;
+  .header-wrap {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    #logo {
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $white;
+      }
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin: 0 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+        .active,
+        a:hover {
+          color: $primary-color;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
 }
-#logo img {
-  width: 150px;
-}
-nav li {
-  display: inline;
-  margin: 0 20px;
-}
-nav li a {
-  color: #222;
-  font-size: 20px;
-}
-#collapse {
-  display: none;
-}
-nav ul {
-  display: block;
-}
-#showcase-text h1 {
-  font-size: 4rem;
-}
-#showcase-text p {
-  font-size: 1.5rem;
-}
-#showcase-text p:nth-child(3) {
-  margin-top: 30px;
-}
-#showcase-text a {
-  color: #fff;
-  padding: 10px 20px;
-  border: 1px solid white;
-}
-#showcase-text {
-  position: relative;
-  z-index: 1;
-}
-#showcase {
-  background-image: url("../img/cover.jpg");
+// END HEADER CSS
+
+// COVER CSS
+#cover {
+  background-image: url(../img/cover.jpg);
   width: 100%;
+  height: 750px;
   background-size: cover;
-  height: 600px;
-  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
+  .dark-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 30, 0.3);
+    z-index: 0;
+  }
+  #cover-text {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    h1 {
+      color: $white;
+      font-size: 50px;
+      letter-spacing: 3px;
+    }
+    h2 {
+      color: $white;
+      background-color: $primary-color;
+      //   width: 30%;
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: lighter;
+    }
+  }
 }
-.dark-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+
+// END COVER CSS
+// ABOUT CSS
+#about {
+  background-color: $dark-gray;
+  padding: 50px 0;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+
+    .title {
+      color: $white;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    .desc {
+      color: $muted;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-align: center;
+      span {
+        color: $white;
+      }
+    }
+    #info {
+      width: 100%;
+      background-color: $light-gray;
+      box-sizing: border-box;
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      #personal {
+        width: 45%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        // align-content: flex-end;
+
+        img {
+          width: 130px;
+          margin-left: auto;
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+        p {
+          span {
+            color: $primary-color;
+          }
+          text-align: right;
+          //   font-weight: bold;
+          font-size: 20px;
+          margin: 2.5px 0;
+          color: $white;
+        }
+      }
+      #skills {
+        width: 45%;
+        margin-right: 5%;
+
+        h2 {
+          color: $white;
+          margin-bottom: 30px;
+        }
+        .skill-row {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          color: $white;
+          margin-top: 20px;
+          h4 {
+            font-weight: lighter;
+          }
+        }
+        progress {
+          width: 100%;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
 }
-#features {
-  padding: 30px 0px;
-}
-#features-wrap {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-around;
-}
-.feature {
-  width: 30%;
+// ABOUT END
+// RESPONSIVE DESIGN
+@media screen and (max-width: 1025px) {
+  header {
+    #logo {
+      h1 {
+        font-size: 24px;
+      }
+    }
+    nav {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #cover {
+    height: 500px;
+    #cover-text {
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+  #about {
+    .container {
+      .title {
+        font-size: 33px;
+      }
+      .desc {
+        width: 80%;
+        font-size: 15px;
+      }
+      #info {
+        #personal {
+          p {
+            font-size: 18px;
+          }
+        }
+        #skills {
+          .skill-row {
+            h4 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-  nav {
-    // flex-direction: column;
-    flex-wrap: wrap;
+  header {
+    .header-wrap {
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      #logo {
+        width: 100%;
+        h1 {
+          padding: 20px 0;
+          text-align: center;
+          background-color: $light-gray;
+        }
+      }
+    }
+    nav {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      ul {
+        justify-content: center;
+      }
+    }
   }
-  nav li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
+  #cover {
+    height: 350px;
+    #cover-text {
+      width: 85%;
+      text-align: center;
+    }
   }
-  nav ul {
-    display: none;
-    width: 100%;
+  #about {
+    .container {
+      width: 85%;
+      #info {
+        #skills,
+        #personal {
+          margin: 0;
+          width: 100%;
+        }
+        #personal {
+          img {
+            margin: 10px auto;
+          }
+          p {
+            text-align: center;
+          }
+        }
+        #skills {
+          margin-top: 10px;
+        }
+      }
+    }
   }
-  #collapse {
-    display: block;
+}
+@media screen and (max-width: 426px) {
+  header {
+    .header-wrap {
+      width: 100%;
+      padding: 0;
+      #logo {
+        width: 100%;
+        h1 {
+          padding: 20px 0;
+          text-align: center;
+          background-color: $light-gray;
+        }
+      }
+      nav {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        ul {
+          justify-content: center;
+          li {
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
   }
-  #showcase-text {
-    padding: 0 20px;
+  #cover {
+    background-position: center;
+    #cover-text {
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+    }
   }
-  #features-wrap {
-    flex-wrap: wrap;
-  }
-  .feature {
-    width: 100%;
-    margin: 20px 0;
+  #about {
+    .container {
+      .desc {
+        width: 100%;
+      }
+      #info {
+        padding: 20px;
+        #personal {
+          p {
+            text-align: left;
+          }
+        }
+        #skills {
+          h2 {
+            margin: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
   }
 }
