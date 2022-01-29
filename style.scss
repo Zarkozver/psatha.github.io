@@ -179,6 +179,114 @@ header {
   }
 }
 // ABOUT END
+// SERVICES CSS
+
+#services {
+  background-color: $light-gray;
+  padding: 50px 0px;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      color: $white;
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    #services-wrap {
+      display: flex;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .service {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+          margin: 0 auto;
+        }
+        text-align: center;
+        h3 {
+          color: $white;
+          margin: 10px 0px;
+          letter-spacing: 2px;
+        }
+        p {
+          color: $muted;
+        }
+      }
+    }
+  }
+}
+// SERVICES END
+// PORTFOLIO CSS
+#portfolio {
+  margin: 50px 0px;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      color: $white;
+      letter-spacing: 3px;
+      font-size: 40px;
+    }
+    #portfolio-wrapper {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .project {
+        width: 30%;
+        position: relative;
+        margin-top: 30px;
+        img {
+          width: 100%;
+        }
+        .project-overlay {
+          display: none;
+          opacity: 0;
+          background-color: rgba(15, 185, 83, 0.8);
+
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          display: flex;
+          transition: all 0.2s;
+          justify-content: center;
+          align-items: center;
+          .overlay-text {
+            text-align: center;
+            width: 100%;
+            word-wrap: break-word;
+            color: $white;
+            display: none;
+            h3 {
+              font-size: 23px;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+            }
+            p {
+              letter-spacing: 2px;
+
+              word-spacing: -4px;
+            }
+          }
+        }
+      }
+      .project:hover .project-overlay {
+        display: flex;
+        opacity: 1;
+        .overlay-text {
+          display: block;
+        }
+      }
+    }
+  }
+}
 // RESPONSIVE DESIGN
 @media screen and (max-width: 1025px) {
   header {
@@ -225,6 +333,44 @@ header {
           .skill-row {
             h4 {
               font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #services {
+    .container {
+      h2 {
+        font-size: 33px;
+      }
+      #services-wrap {
+        .service {
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    .container {
+      h2 {
+        font-size: 33px;
+        letter-spacing: 3px;
+      }
+      #portfolio-wrapper {
+        .project {
+          width: 47%;
+          .overlay-text {
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 13px;
             }
           }
         }
@@ -286,6 +432,33 @@ header {
       }
     }
   }
+  #services {
+    .container {
+      width: 85%;
+    }
+  }
+  #portfolio {
+    .container {
+      width: 85%;
+      h2 {
+        font-size: 33px;
+        letter-spacing: 3px;
+      }
+      #portfolio-wrapper {
+        .project {
+          width: 47%;
+          .overlay-text {
+            h3 {
+              font-size: 17px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 426px) {
   header {
@@ -317,9 +490,11 @@ header {
   }
   #cover {
     background-position: center;
+    height: 300px;
     #cover-text {
+      width: 100%;
       h1 {
-        font-size: 30px;
+        font-size: 25px;
       }
       h2 {
         font-size: 15px;
@@ -342,6 +517,45 @@ header {
           h2 {
             margin: 0;
             margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  #services {
+    .container {
+      width: 85%;
+      #services-wrap {
+        .service {
+          img {
+            width: 60px;
+          }
+          margin-bottom: 30px;
+          width: 100%;
+        }
+        .service:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  #portfolio {
+    .container {
+      width: 90%;
+      h2 {
+        font-size: 33px;
+        letter-spacing: 3px;
+      }
+      #portfolio-wrapper {
+        .project {
+          width: 100%;
+          .overlay-text {
+            h3 {
+              font-size: 17px;
+            }
+            p {
+              font-size: 12px;
+            }
           }
         }
       }
