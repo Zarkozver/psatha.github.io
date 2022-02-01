@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- STYLE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.min.css" type="text/css" />
     <title>Žarko Jović - Portfolio</title>
   </head>
@@ -210,7 +217,60 @@
     </div>
     <!-- STATISTICS END -->
     <!-- CONTACT  -->
-    <div id="contact"></div>
+    <div id="contact">
+      <div class="container">
+        <div class="title">
+          <h2>CONTACT</h2>
+        </div>
+        <div id="contact-info">
+          <div class="c-info">
+            <img src="img/contact-1.png" alt="contact 1" />
+            <h3>ADDRESS</h3>
+            <p>Svete Popovic 52, Ub</p>
+          </div>
+          <div class="c-info">
+            <img src="img/contact-2.png" alt="contact 2" />
+            <h3>PHONE NUMBER</h3>
+            <p>069/1234-567</p>
+          </div>
+          <div class="c-info">
+            <img src="img/contact-4.png" alt="contact 3" />
+            <h3>EMAIL</h3>
+            <p>zarkojovic1302@gmail.com</p>
+          </div>
+        </div>
+        <div id="form-wrap">
+          <form action="action.php" method="get">
+            <input type="text" name="name" id="name" placeholder="Ime" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input type="text" name="title" id="title" placeholder="Naslov" />
+            <textarea
+              name="question"
+              id="question"
+              cols="30"
+              rows="10"
+              placeholder="Pitanje"
+            ></textarea>
+            <input type="submit" value="POŠALJI" />
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- CONTACT END -->
+    <!-- FOOTER BEGIN -->
+    <footer>
+      <div class="container">
+        <div id="copyright">
+          <p>ZARKO JOVIC &copy; 2022</p>
+        </div>
+        <div id="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-sitemap"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
   </body>
 </html>

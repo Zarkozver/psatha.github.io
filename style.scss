@@ -288,6 +288,71 @@ header {
   }
 }
 // PORFOLIO END
+// CONTACT START
+#contact {
+  padding: 50px 0px;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    .title {
+      h2 {
+        text-align: center;
+        color: $white;
+        font-size: 40px;
+        letter-spacing: 3px;
+      }
+    }
+    #contact-info {
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      .c-info {
+        width: 30%;
+        text-align: center;
+        img {
+          width: 60px;
+          margin: 20px auto;
+        }
+        h3 {
+          color: $white;
+        }
+        p {
+          color: $muted;
+        }
+      }
+    }
+    #form-wrap {
+      margin-top: 30px;
+      form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        input,
+        textarea {
+          padding: 10px;
+          border: none;
+          border-bottom: 3px solid #1f1f1f;
+          color: $muted;
+          margin: 10px 0px;
+          font-size: 16px;
+          background-color: $light-gray;
+        }
+        input[type="text"] {
+          width: 30%;
+        }
+        textarea {
+          width: 100%;
+        }
+        input[type="submit"] {
+          background-color: #0a7c37;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+// CONTACT END
 // STATS CSS
 #stats {
   padding: 50px 0px;
@@ -322,6 +387,30 @@ header {
     }
   }
 }
+// FOOTER CSS
+footer {
+  background-color: $light-gray;
+  padding: 20px 0px;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    #copyright {
+      color: $white;
+    }
+    #social {
+      a {
+        font-size: 20px;
+        color: $muted;
+        margin: 0px 5px;
+      }
+    }
+  }
+}
+// FOOTER END
 // RESPONSIVE DESIGN
 @media screen and (max-width: 1025px) {
   header {
@@ -471,6 +560,13 @@ header {
     .container {
       width: 85%;
     }
+    #services-wrap {
+      .service {
+        img {
+          width: 80px;
+        }
+      }
+    }
   }
   #portfolio {
     .container {
@@ -499,11 +595,46 @@ header {
       width: 85%;
       #stats-wrap {
         .stat {
+          img {
+            width: 80px;
+          }
           h2 {
             font-size: 25px;
           }
           h3 {
             font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  #contact {
+    .container {
+      width: 85%;
+      .title {
+        h2 {
+          font-size: 33px;
+        }
+      }
+      #contact-info {
+        .c-info {
+          img {
+            width: 50px;
+          }
+          h3 {
+            font-size: 17px;
+
+            letter-spacing: 2px;
+          }
+          p {
+            font-style: 12px;
+          }
+        }
+      }
+      #form-wrap {
+        form {
+          input[type="text"] {
+            width: 100%;
           }
         }
       }
@@ -617,9 +748,55 @@ header {
       width: 95%;
       #stats-wrap {
         .stat {
+          img {
+            width: 60px;
+          }
           width: 100%;
           margin: 20px 0px;
         }
+      }
+    }
+  }
+  #contact {
+    .container {
+      width: 95%;
+      #contact-info {
+        flex-wrap: wrap;
+        .c-info {
+          h3 {
+            font-size: 17px;
+
+            letter-spacing: 2px;
+          }
+          p {
+            font-style: 12px;
+          }
+          width: 100%;
+        }
+      }
+      #form-wrap {
+        form {
+          input[type="text"] {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      width: 95%;
+      justify-content: center;
+      flex-direction: column-reverse;
+      #copyright,
+      #social {
+        width: 100%;
+      }
+      #copyright p {
+        text-align: center;
+      }
+      #social {
+        text-align: center;
       }
     }
   }
