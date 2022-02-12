@@ -21,16 +21,16 @@
     <header>
       <div class="header-wrap">
         <div id="logo">
-          <h1>Zarko Jovic</h1>
+          <a href="#"><h1>Žarko Jović</h1></a>
         </div>
         <nav>
           <ul>
-            <li><a href="#" class="active">Početna</a></li>
-            <li><a href="#">O meni</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Početna</a></li>
+            <li><a href="#about">O meni</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Usluge</a></li>
+            <li><a href="#testimonials">Utisci</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
       </div>
@@ -49,13 +49,14 @@
     <div id="about">
       <div class="container">
         <h2 class="title">O MENI</h2>
+        <hr class="title-underline" />
         <p class="desc">
-          Web developer with 3+ years of experience with ability to efficiently
-          communicate and deliver high-quality client requests. Experienced in
-          <span> quickly</span> and <span> efficiently</span> troubleshooting
-          technical problems. Ability to multi-task and give technical
-          assistance when in need. Having a very good customer service skills
-          and excellent communication for non-technical users to understand.
+          Web developer sa 3+ godina iskustva sa mogućnostima da efikasno
+          komuniciram i ispunim najzahtevnije želje klijenata. Obučen da
+          <span> brzo</span> i <span> efikasno</span> rešavam tehničke probleme.
+          Mogućnost da uspešno radim više stvari od jednom i pružim tehničku
+          podršku ukoliko je neophodno. Posedujem veštinu da pričam sa kupcem i
+          objasnim pojmove da čak i neiskusni korisnik razume.
         </p>
         <div id="info">
           <div id="personal">
@@ -73,22 +74,31 @@
               <h4>HTML5 & CSS3</h4>
               <h4>95%</h4>
             </div>
-            <progress value="95" max="100">95%</progress>
+
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
             <div class="skill-row">
               <h4>PHP</h4>
               <h4>87%</h4>
             </div>
-            <progress value="87" max="100">87%</progress>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
             <div class="skill-row">
               <h4>LARAVEL</h4>
               <h4>80%</h4>
             </div>
-            <progress value="80" max="100">80%</progress>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
             <div class="skill-row">
               <h4>JAVASCRIPT</h4>
               <h4>70%</h4>
             </div>
-            <progress value="70" max="100">70%</progress>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,11 +107,12 @@
     <!-- SERVICES START -->
     <div id="services">
       <div class="container">
-        <h2>SERVICES</h2>
+        <h2>USLUGE</h2>
+        <hr class="title-underline" />
         <div id="services-wrap">
           <div class="service">
             <img src="img/service-1.png" alt="service icon" />
-            <h3>SERVICE NAME</h3>
+            <h3>WEB APLIKACIJE</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur, tempore explicabo! Omnis aperiam pariatur fuga
@@ -110,7 +121,7 @@
           </div>
           <div class="service">
             <img src="img/service-2.png" alt="service icon" />
-            <h3>SERVICE NAME</h3>
+            <h3>KREATIVNA REŠENJA</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur, tempore explicabo! Omnis aperiam pariatur fuga
@@ -119,7 +130,7 @@
           </div>
           <div class="service">
             <img src="img/service-3.png" alt="service icon" />
-            <h3>SERVICE NAME</h3>
+            <h3>MARKETING</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur, tempore explicabo! Omnis aperiam pariatur fuga
@@ -134,13 +145,14 @@
     <div id="portfolio">
       <div class="container">
         <h2>PORTFOLIO</h2>
+        <hr class="title-underline" />
         <div id="portfolio-wrapper">
           <div class="project">
             <img src="img/portfolio-1.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
-                <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
+                <h3>PSATHA</h3>
+                <p>HTML5/ CSS3</p>
               </div>
             </div>
           </div>
@@ -148,7 +160,7 @@
             <img src="img/portfolio-2.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
+                <h3>MAJDAN 1924</h3>
                 <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
               </div>
             </div>
@@ -157,7 +169,7 @@
             <img src="img/portfolio-3.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
+                <h3>FOTON</h3>
                 <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
               </div>
             </div>
@@ -166,7 +178,7 @@
             <img src="img/portfolio-4.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
+                <h3>RESPEKT</h3>
                 <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
               </div>
             </div>
@@ -175,8 +187,8 @@
             <img src="img/portfolio-5.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
-                <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
+                <h3>STAMENICH</h3>
+                <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP/ LARAVEL</p>
               </div>
             </div>
           </div>
@@ -184,8 +196,8 @@
             <img src="img/portfolio-6.png" alt="project example" />
             <div class="project-overlay">
               <div class="overlay-text">
-                <h3>PROJECT NAME</h3>
-                <p>HTML/ CSS/ JAVASCRIPT/ BOOTSTRAP</p>
+                <h3>ŽARKO JOVIĆ</h3>
+                <p>HTML/ CSS/ SASS</p>
               </div>
             </div>
           </div>
@@ -193,6 +205,43 @@
       </div>
     </div>
     <!-- PORTFOLIO END -->
+    <!-- TESTIMONIALS -->
+    <div id="testimonials">
+      <div class="container">
+        <h2>UTISCI</h2>
+        <hr class="title-underline" />
+        <div id="testimonials-wrap">
+          <div class="testimonial">
+            <img src="img/testimonial-1.jpg" alt="client" />
+            <h4>Stefan Perišić</h4>
+            <p>Lep početak saradnje. Sve preporuke!</p>
+            <h3><i class="fa-solid fa-quote-left"></i></h3>
+          </div>
+          <div class="testimonial">
+            <img src="img/testimonial-2.jpg" alt="client" />
+            <h4>Senida Nedić</h4>
+            <p>Brza i laka saradnja! Pozitivno iskustvo i preporuka!</p>
+            <h3><i class="fa-solid fa-quote-left"></i></h3>
+          </div>
+          <div class="testimonial">
+            <img src="img/testimonial-3.jpg" alt="client" />
+            <h4>Eduard Johnson</h4>
+            <p>Odlična komunikacija, dobra saradnja, sve preporuke! 10/10</p>
+            <h3><i class="fa-solid fa-quote-left"></i></h3>
+          </div>
+          <div class="testimonial">
+            <img src="img/testimonial-4.jpg" alt="client" />
+            <h4>Raheem Ishtar</h4>
+            <p>
+              Odradjuje sve zadatke pre zadatog roka i uvek daje više od
+              očekivanog!
+            </p>
+            <h3><i class="fa-solid fa-quote-left"></i></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TESTIMONIALS END -->
     <!-- STATISTICS -->
     <div id="stats">
       <div class="container">
@@ -221,16 +270,17 @@
       <div class="container">
         <div class="title">
           <h2>CONTACT</h2>
+          <hr class="title-underline" />
         </div>
         <div id="contact-info">
           <div class="c-info">
             <img src="img/contact-1.png" alt="contact 1" />
-            <h3>ADDRESS</h3>
+            <h3>ADRESA</h3>
             <p>Svete Popovic 52, Ub</p>
           </div>
           <div class="c-info">
             <img src="img/contact-2.png" alt="contact 2" />
-            <h3>PHONE NUMBER</h3>
+            <h3>BROJ TELEFONA</h3>
             <p>069/1234-567</p>
           </div>
           <div class="c-info">
@@ -241,14 +291,33 @@
         </div>
         <div id="form-wrap">
           <form action="action.php" method="get">
-            <input type="text" name="name" id="name" placeholder="Ime" />
-            <input type="text" name="email" id="email" placeholder="Email" />
-            <input type="text" name="title" id="title" placeholder="Naslov" />
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ime"
+            />
+            <input
+              required
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              required
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Naslov"
+            />
             <textarea
               name="question"
               id="question"
               cols="30"
               rows="10"
+              required
               placeholder="Pitanje"
             ></textarea>
             <input type="submit" value="POŠALJI" />
@@ -264,10 +333,14 @@
           <p>ZARKO JOVIC &copy; 2022</p>
         </div>
         <div id="social">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fas fa-sitemap"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/jovic_zarko"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="sitemap.xml"><i class="fas fa-sitemap"></i></a>
+          <a href="https://facebook.com"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="style.scss"><i class="fab fa-sass"></i></a>
         </div>
       </div>
     </footer>
