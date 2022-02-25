@@ -1,0 +1,492 @@
+/* primary color #FF7B22 */
+/* secondary color #FFF6DC */
+/* accent color #99875B */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap");
+.primary-font {
+  font-family: "Open Sans", sans-serif;
+}
+.primary-color {
+  color: #ff7b22;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.secondary-color {
+  color: #fff6dc;
+}
+.text-white {
+  color: #fff;
+}
+
+.info-color {
+  color: #99875b;
+}
+.bg-primary {
+  background-color: #ff7b22;
+}
+.bg-secondary {
+  background-color: #fff6dc;
+}
+.clear {
+  clear: both;
+}
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.text-muted {
+  color: #363636;
+}
+.py-5 {
+  padding: 50px 0;
+}
+#brand-name {
+  background-color: black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.brand-logo {
+  width: 60px;
+}
+
+#navigacija {
+  background-color: #fff6dc;
+  padding: 10px 50px;
+  position: relative;
+}
+#navbar {
+  float: right;
+}
+#navbar ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+#navbar li {
+  display: inline;
+  margin-left: 50px;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+}
+.text-center {
+  text-align: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  border-bottom: 1px solid #ff7b22;
+  color: rgba(0, 0, 0, 1);
+}
+.active {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ff7b22;
+}
+#logo-text {
+  position: absolute;
+  width: 150px;
+  top: 23px;
+  left: calc(50% - 75px);
+}
+#showcase {
+  position: relative;
+  width: 100%;
+  padding: 150px 0px 250px 0px;
+  background-image: url("../img/showcase-v4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -0px;
+}
+.showcase-text {
+  text-transform: uppercase;
+  font-size: 95px;
+  letter-spacing: 15px;
+  font-weight: 300;
+}
+#showcase p {
+  width: 600px;
+  margin: 0 auto;
+}
+#showcase i {
+  position: absolute;
+  left: 49%;
+  bottom: 25px;
+  animation: pomeranje 3s infinite;
+}
+@keyframes pomeranje {
+  0% {
+    bottom: 25px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 25px;
+  }
+}
+.btn-primary {
+  border: none;
+  border-radius: 0;
+  padding: 20px 30px;
+  font-size: 12px;
+  background-color: #fff;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 4px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff7b22;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#about {
+  margin: 0px 0px 0;
+}
+#about h1 {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 5px;
+}
+#about p {
+  width: 600px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+}
+#about-images img {
+  float: left;
+  width: calc(50% - 10px);
+}
+#about-images img:nth-child(1) {
+  margin-right: 20px;
+}
+#about-images {
+  margin: 60px 0;
+}
+.hand-writing {
+  font-family: "Sassy Frass", cursive;
+}
+#ingredients h1 {
+  letter-spacing: 5px;
+}
+#ingredients {
+  padding: 0px 0;
+  background-color: #99875b;
+}
+.ingredients-wrap {
+  width: 50%;
+  float: left;
+}
+.ingredients-wrap:nth-child(1) {
+  margin-top: 80px;
+}
+.ingredients-wrap p {
+  margin: 20px 0;
+  color: #363636;
+}
+.ingredients-wrap img {
+  width: 100%;
+}
+#quote {
+  position: relative;
+  background-image: url("../img/food-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+}
+#quote p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.feature .info-color {
+  padding: 0px 10px;
+}
+#reservation .primary-font {
+  margin-bottom: 20px;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+#quote .container {
+  position: relative;
+  z-index: 1;
+}
+#quote p {
+  width: 800px;
+  margin: 0 auto;
+}
+.menu p {
+  width: 600px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+}
+.menu-wrap {
+  margin: 30px;
+  text-align: left;
+  float: left;
+  width: 44%;
+}
+.dish-info,
+.menu-wrap p {
+  float: left;
+}
+.dish-info {
+  width: 90%;
+}
+.dish-price {
+  float: left;
+}
+.dish-info p {
+  color: rgba(0, 0, 0, 0.6);
+}
+.dish-wrap {
+  margin-bottom: 30px;
+}
+.menu h1 {
+  margin: 10px 0 20px 0;
+  letter-spacing: 6px;
+}
+#features {
+  background-color: #fff;
+  padding: 0px 0;
+}
+.feature img {
+  border-radius: 50%;
+  margin-left: 0%;
+}
+.feature {
+  width: 25%;
+  float: left;
+}
+.feature-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feature-title {
+  margin: 20px 0 10px;
+}
+.feature-title + p {
+  font-size: 13px;
+}
+#reservation {
+  position: relative;
+  background-image: url("../img/food-photo-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px;
+  color: white;
+}
+#reservation .container {
+  position: relative;
+  z-index: 10;
+}
+#reservation p {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+#reservation h1 {
+  letter-spacing: 6px;
+  margin: 10px 0;
+}
+.form-split {
+  width: calc(50% - 20px);
+  float: left;
+}
+.form-split:nth-child(1) {
+  margin-right: 40px;
+}
+#reservation input,
+#reservation textarea {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  font-size: 12px;
+  padding: 15px;
+  margin: 5px 0;
+}
+#reservation input {
+  height: 20px;
+}
+#form-wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+#chef {
+  background-color: #99875b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chef-wrap {
+  width: 35%;
+}
+.chef-wrap img {
+  width: 400px;
+  margin-bottom: -4px;
+  margin-left: 200px;
+}
+#chef h1 {
+  letter-spacing: 6px;
+}
+#footer {
+  padding: 50px 0 0;
+  background-color: #191816;
+}
+.black-background {
+  background-color: #000;
+}
+.footer-col {
+  float: left;
+  width: 33%;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+#footer a {
+  text-align: end;
+}
+.text-end {
+  text-align: end;
+}
+.f-head {
+  margin-bottom: 20px;
+}
+.footer-col img {
+  margin-left: 130px;
+}
+#social-media {
+  margin-top: 30px;
+}
+#social-media i {
+  margin: 0 10px;
+}
+.f-copy {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 10px;
+}
+.about-bg {
+  background-image: url("../img/food-photo-1.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.menu-bg {
+  background-image: url("../img/food-photo.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header {
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#header h1 {
+  font-size: 60px;
+  letter-spacing: 6px;
+}
+#header p {
+  width: 60%;
+  margin: 20px auto;
+  line-height: 30px;
+}
+.bg-secondary .container {
+  padding: 50px 0;
+}
+.gallery-bg {
+  background-image: url("../img/food-photo-1.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.gallery-img {
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin: 0 10px;
+  float: left;
+  margin-bottom: 20px;
+}
+.author-bg {
+  background-image: url("../img/author.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  background-position: 0 -180px;
+}
+.author-split {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+}
+.author-split:nth-of-type(2) {
+  margin-top: 100px;
+}
+.author-split img {
+  width: 100%;
+  border-radius: 50%;
+}
+#author h1 {
+  letter-spacing: 6px;
+}
+.author-split .hand-writing {
+  margin-bottom: 50px;
+}
+.feature img {
+  width: 40%;
+}
+.gallery-img:hover {
+  transform: scale(1.04);
+}
+#gallery h1 {
+  letter-spacing: 3px;
+}
+.footer-image {
+  width: 150px;
+}
+#footer .container {
+  padding: 0;
+}
