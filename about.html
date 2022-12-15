@@ -4,159 +4,564 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/psatha_for_ps-b.png" type="image/png" />
-    <meta name="author" content="mailto:zarko.jovic.20.21@ict.edu.rs" />
-    <meta
-      name="keywords"
-      content="Restoran, Psatha, Hrana, Kuvanje, Jelo, Dezerti, Piće, O nama, Informacije, Detaljno"
+    <meta name="author" content="mailto:uros.lazic.91.21@ict.edu.rs" />
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <meta name="copyright" content="..." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
-    <meta
-      name="description"
-      content="Psatha je restoran i bar sa najprefinjenijim i najukusnijim jelima po najpristupačnijoj ceni"
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logo-transparent.ico"
+      type="image/x-icon"
     />
-    <meta name="copyright" content="Sva prava zadržava Psatha 2021" />
-    <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
     />
-
-    <title>Psatha - O Nama</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <title>Wedia</title>
   </head>
-  <body class="bg-secondary about-bg">
-    <!-- NAVIGACIJA -->
-    <nav id="navigacija">
-      <div id="brand-name">
-        <a href="index.html">
-          <img src="img/psatha_for_ps-b.png" class="brand-logo" alt="Logo" />
-        </a>
+  <body class="about-bg">
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <img src="img/logo-transparent.png" alt="" />
+    </div>
+    <div class="dark-overlay"></div>
+    <!-- OVERLAY NAV -->
+    <div id="side-nav" class="d-lg-none">
+      <div class="container side-container">
+        <h1 class="text-center display-1 my-4">
+          <a
+            href="index.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Home
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-1 my-4 active">
+          <a
+            href="index.html#cover"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            About
+          </a>
+
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 my-4">
+          <a
+            href="contact.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Contact
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 my-4">
+          <a
+            href="portfolio.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Portfolio
+          </a>
+          <div class="underline"></div>
+        </h1>
       </div>
-      <img src="img/logo-text.png" alt="logo-text" id="logo-text" />
-      <div id="navbar">
-        <ul>
-          <li class="primary-font">
-            <a href="index.html" class="nav-link">Početna</a>
-          </li>
-          <li class="primary-font">
-            <a href="about.html" class="nav-link active">O Nama</a>
-          </li>
-          <li class="primary-font">
-            <a href="menu.html" class="nav-link">Meni</a>
-          </li>
-          <li class="primary-font">
-            <a href="gallery.html" class="nav-link">Galerija</a>
-          </li>
-          <li class="primary-font">
-            <a href="author.html" class="nav-link">Autor</a>
-          </li>
-        </ul>
+    </div>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
+    >
+      <div class="container px-4">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo-transparent.png" alt="img"
+        /></a>
+        <button
+          class="navbar-toggler border-0 text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdowns"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span
+            class="iconify burger text-white"
+            data-icon="ri:menu-3-line"
+          ></span> -->
+          <div id="burger-icon">
+            <div class="burger-line bl-1"></div>
+            <div class="burger-line bl-2"></div>
+            <div class="burger-line bl-3"></div>
+          </div>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-6 mx-3 fw-light"
+                aria-current="page"
+                href="index.html"
+                >Home
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-6 mx-3" href="index.html#cover"
+                >About
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 mx-3" href="contact.html"
+                >Contact
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 mx-3" href="portfolio.html"
+                >Portfolio
+                <div class="underline"></div
+              ></a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link mx-3 fs-6"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+                <span class="iconify" data-icon="dashicons:arrow-down"></span>
+                <div class="underline"></div>
+              </a>
+              <ul
+                class="dropdown-menu primary-font"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"> Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
       </div>
-      <div class="clear"></div>
     </nav>
-    <!-- HEADER -->
-    <div id="header">
-      <div class="container text-center">
-        <h1 class="text-white primary-font">O Nama</h1>
-        <p class="text-white primary-font">
-          Za one koje zanima nešto više o nama.
-        </p>
-      </div>
-    </div>
-    <!-- ABOUT -->
-    <div id="about" class="bg-secondary">
-      <div class="container text-center">
-        <small class="primary-font info-color">PSATHA</small>
-        <h1 class="primary-font">NASA PRIČA</h1>
-        <p class="primary-font">
-          Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
-          san i napravi svoj restoran.
-        </p>
-        <div id="about-images">
-          <img src="img/cook.jpg" alt="cook" />
-          <img src="img/home-photo.jpeg" alt="dish" />
-          <div class="clear"></div>
-        </div>
-        <small class="primary-font info-color">ZARKO JOVIC</small>
-        <h1 class="hand-writing">Z.Jovic</h1>
-      </div>
-    </div>
-    <!-- CHEF -->
-    <div id="chef">
-      <div class="chef-wrap">
-        <small class="primary-font">PSATHA</small>
-        <h1 class="primary-font">NAŠ ŠEF KUHINJE</h1>
-        <p class="primary-font text-muted mt-1">
-          Kao našeg glavnog odgovornogu kuhinji dolazi nam čovek iz zemlje
-          izlazećeg sunca - Taj Li. Preko 20 godina radnog iskustva u
-          najprestižnijim restoranima širom sveta, sada je sa nama da podeli
-          najprefinjenije ukuse i tajne koje je otkrio tokom svoje karijere.
-        </p>
-        <div class="mt-5">
-          <a class="btn-primary" href="menu.html">POGLEDAJ NAŠ MENI</a>
+    <!-- COVER ABOUT -->
+    <div
+      id="cover"
+      class="d-flex justify-content-center position-relative align-items-center"
+    >
+      <!-- <div class="cover-img">
+        <img src="img/logo-transparent-cut.png" alt="logo" />
+      </div> -->
+      <div class="container">
+        <div class="cover-text">
+          <h5 class="primary-font text-muted text-center">information</h5>
+          <h1 class="primary-font text-white display-1 text-center">
+            about <span> us</span>
+          </h1>
+          <p class="secondary-font text-white text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            asperiores ullam officiis ducimus beatae, vero vitae maxime dolores
+            cum, aliquam commodi ut, sapiente saepe in nulla fuga est! Optio,
+            similique!
+          </p>
         </div>
       </div>
-      <div class="chef-wrap">
-        <img src="img/chef2.png" alt="main chef" />
+    </div>
+    <!-- ABOUT TEXT -->
+    <div id="about-text">
+      <div class="container-fluid py-5">
+        <div class="row">
+          <div class="col-sm-6 border-end">
+            <!-- <small class="h4 text-white secondary-font"> ABOUT US </small> -->
+            <h1 class="text-light primary-font display-3">
+              Lorem ipsum dolor, sit amet
+              <span class="yellow"> consectetur</span> adipisicing elit. Sequi,
+              recusandae?
+            </h1>
+          </div>
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <p class="text-white seconadry-font p-3 fs-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+              iure tempore corrupti vel tempora molestias odio eaque ea, aut
+              facere. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+              <br />
+              Hic quibusdam dolorum ratione excepturi voluptate dolore alias
+              sunt iste consequuntur tenetur! Quia corrupti eligendi, beatae non
+              ipsa est optio dignissimos quaerat?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURES -->
+    <div id="features" class="py-sm-5 py-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 feature text-center my-md-0 my-4">
+            <span
+              class="iconify text-white"
+              data-icon="ph:video-camera-fill"
+            ></span>
+            <h3 class="primary-font text-white text-uppercase my-3">
+              Making videos
+            </h3>
+            <p class="secondary-font text-light-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              natus.
+            </p>
+          </div>
+          <div class="col-sm-3 feature text-center my-md-0 my-4">
+            <span
+              class="iconify text-white display-1"
+              data-icon="fa6-solid:photo-film"
+            ></span>
+            <h3 class="primary-font text-white text-uppercase my-3">
+              Making videos
+            </h3>
+            <p class="secondary-font text-light-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              natus.
+            </p>
+          </div>
+          <div class="col-sm-3 feature text-center my-md-0 my-4">
+            <span
+              class="iconify text-white display-1"
+              data-icon="ic:round-camera"
+            ></span>
+            <h3 class="primary-font text-white text-uppercase my-3">
+              Making videos
+            </h3>
+            <p class="secondary-font text-light-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              natus.
+            </p>
+          </div>
+          <div class="col-sm-3 feature text-center my-md-0 my-4">
+            <span
+              class="iconify text-white display-1"
+              data-icon="el:film"
+            ></span>
+            <h3 class="primary-font text-white text-uppercase my-3">
+              Making videos
+            </h3>
+            <p class="secondary-font text-light-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              natus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT IMG -->
+    <div id="about-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 p-0 m-0">
+            <div class="img-wrap py-5">
+              <div class="main-img position-relative">
+                <img
+                  src="img/about-img-1.jpg"
+                  alt="slika"
+                  class="img-fluid rounded-circle"
+                />
+                <img
+                  src="img/about-img-2.jpg"
+                  alt="slika"
+                  class="secondary-img rounded-circle"
+                />
+                <img
+                  src="img/about-img-3.jpg"
+                  alt="slika"
+                  class="secondary-img rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 m-0 d-flex align-items-center">
+            <div class="w-5">
+              <h5 class="text-muted primary-font">about us</h5>
+              <h2 class="primary-font text-white text-uppercase display-3">
+                Lorem ipsum dolor, sit amet
+                <span class="yellow"> consectetur</span> adipisicing elit.
+              </h2>
+              <!-- <p class="secondary-font text-light-muted">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+                  nostrum laudantium ex ut sint ullam.
+                </p> -->
+              <p class="secondary-font text-white btn-wrap mt-5">
+                <a href="#" class="primary-btn primary-font h5">
+                  click me here
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT CAROUSEL -->
+    <!-- <div id="about-carousel" class="my-5">
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+          <div class="item">
+            <img src="img/logo-transparent.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- team -->
+    <div id="team" class="py-5">
+      <div class="container px-5">
+        <div class="row">
+          <h5 class="text-center primary-font text-muted">The crew</h5>
+          <h2
+            class="primary-font text-white text-center text-uppercase display-3"
+          >
+            OUR <span>TEAM</span>
+          </h2>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-4 crew">
+            <div class="crew-img-wrap">
+              <div class="gradient-overlay"></div>
+              <img src="img/author.jpg" alt="author" class="img-fluid" />
+            </div>
+            <h3 class="primary-font text-center h1 text-white">
+              Ognjen Stamenic
+            </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
+          </div>
+          <div class="col-sm-4 crew">
+            <div class="crew-img-wrap">
+              <div class="gradient-overlay"></div>
+              <img src="img/author.jpg" alt="author" class="img-fluid" />
+            </div>
+            <h3 class="primary-font text-center h1 text-white">
+              Ognjen Stamenic
+            </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
+          </div>
+          <div class="col-sm-4 crew">
+            <div class="crew-img-wrap">
+              <div class="gradient-overlay"></div>
+              <img src="img/author.jpg" alt="author" class="img-fluid" />
+            </div>
+            <h3 class="primary-font text-center h1 text-white">
+              Ognjen Stamenic
+            </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
+          </div>
+        </div>
       </div>
     </div>
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer class="p-sm-5 pb-sm-1 px-md-1 p-3 pb-1">
       <div class="container">
-        <div class="primary-font footer-col">
-          <p class="text-white f-head">KONTAKT</p>
-          <p class="footer-text">
-            <i class="fas fa-phone"> </i> +381 69 1234500
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-envelope"> </i>
-            zarko&#46;jovic&#46;20&#46;21&#64;gmail&#46;com
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-home"> </i> Beograd, Srbija
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-graduation-cap"> </i> Visa ICT - IT
-          </p>
+        <div class="row">
+          <div class="col-lg-6 col-md-3 footer-logo">
+            <img src="img/logo-transparent.png" alt="logo" />
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">QUICk LINKS</h3>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">home</a>
+            </p>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">about</a>
+            </p>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">contact</a>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">INFORMATION</h3>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="gridicons:location"
+              ></span>
+              Milosa Pocerca 10
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span class="iconify-inline" data-icon="line-md:email"></span>
+              ognjen@gmail.com
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="carbon:phone-filled"
+              ></span>
+              069/1234-000
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">INFORMATION</h3>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="gridicons:location"
+              ></span>
+              Milosa Pocerca 10
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span class="iconify-inline" data-icon="line-md:email"></span>
+              ognjen@gmail.com
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="carbon:phone-filled"
+              ></span>
+              069/1234-000
+            </p>
+          </div>
         </div>
-        <div class="primary-font footer-col">
-          <img src="img/logo-text.png" class="footer-image" alt="logo-footer" />
-          <p class="footer-text text-center">
-            Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
-            san i napravi svoj restoran. Za najpuniji i najsočniji ukus tu su
-            uvek najsvežije namirnice koje nabavljamo svaki dan iz tek ubranih
-            bašta naših vrednih zemljoradnika.
-          </p>
-        </div>
-        <div class="primary-font footer-col">
-          <p class="text-white text-end f-head">KORISNI LINKOVI</p>
-          <a href="index.html" class="footer-text">Pocetna</a>
-          <a href="about.html" class="footer-text">O nama</a>
-          <a href="menu.html" class="footer-text">Meni</a>
-          <a href="gallery.html" class="footer-text">Galerija</a>
-          <a href="author.html" class="footer-text">Autor</a>
-        </div>
-        <div class="clear"></div>
-        <div id="social-media" class="text-center text-white">
-          <a class="text-white" target="blank" href="https://facebook.com"
-            ><i class="fab fa-facebook-square"></i
-          ></a>
-          <a class="text-white" target="blank" href="sitemap.xml"
-            ><i class="fas fa-sitemap"></i
-          ></a>
-          <a class="text-white" target="blank" href="rss.xml"
-            ><i class="fas fa-rss"></i
-          ></a>
-          <a
-            class="text-white"
-            target="blank"
-            href="https://instagram.com/jovic_zarko"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-        <div class="text-center f-copy text-white primary-font">
-          &copy; 2021 PSATHA
+        <hr class="text-white" />
+        <div class="row">
+          <div class="col-sm-6 social-footer">
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="entypo-social:facebook"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none"
+              ><span class="iconify" data-icon="bi:youtube"></span>
+            </a>
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span class="iconify" data-icon="el:linkedin"></span>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-end copyright text-muted primary-font">
+              &copy; <span id="year"></span> Wedia, All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+      var myCarousel = document.querySelector("#carousel-slider");
+      //   var carousel = new bootstrap.Carousel(myCarousel, {
+      //     interval: 5000,
+      //     wrap: true,
+      //     pause: false,
+      //   });
+      var overlay = document.getElementById("preloader");
+      let date = new Date();
+      let year = date.getFullYear();
+      // console.log(year);
+      $("#year").text(year);
+      function dnone() {
+        $("#preloader").delay(3000).addClass("d-none");
+      }
+      $(window).on("load", function () {
+        $("#preloader").fadeOut();
+        $("#preloader").addClass("opacity-0", 2500);
+
+        $("#transition").fadeOut();
+      });
+      $("#side-nav").hide();
+      $(".navbar-toggler").click(function () {
+        $(".bl-1").toggleClass("rotate-1", 1000, "easeOutSine");
+        $(".bl-3").toggleClass("rotate-2", 1000, "easeOutSine");
+        $(".bl-2").toggleClass("translate-1", 1000, "easeOutSine");
+        $("#side-nav").fadeToggle("fast", function () {
+          if ($(this).is(":visible")) $(this).css("display", "flex");
+          $("body").toggleClass("vh-100");
+        });
+      });
+      //   owl.on("mousewheel", ".owl-stage", function (e) {
+      //     if (e.deltaY > 0) {
+      //       owl.trigger("next.owl");
+      //     } else {
+      //       owl.trigger("prev.owl");
+      //     }
+      //     e.preventDefault();
+      //   });
+    </script>
   </body>
 </html>

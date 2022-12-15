@@ -1,393 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="mailto:zarko.jovic.20.21@ict.edu.rs" />
+    <meta name="author" content="mailto:wedia@gmail.com" />
     <meta
       name="keywords"
-      content="Restoran, Psatha, Hrana, Kuvanje, Jelo, Dezerti, Piće"
+      content="Video, Production, Music, Spot, Artist, Hit"
     />
     <meta
       name="description"
-      content="Psatha je restoran i bar sa najprefinjenijim i najukusnijim jelima po najpristupačnijoj ceni"
+      content="Wedia je produkcijska kuća koja se bavi izradom promo video materijala svake vrste. Wedia"
     />
-    <meta name="copyright" content="Sva prava zadržava Psatha 2021" />
-    <link rel="shortcut icon" href="img/psatha_for_ps-b.png" type="image/png" />
-    <link rel="stylesheet" href="style/style.css" />
+    <meta name="copyright" content="Wedia 2022 All rights reserved" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logo-transparent.ico"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
     />
-
-    <title>Psatha - Restoran i Bar!</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <title>Wedia</title>
   </head>
-  <body class="bg-secondary">
-    <!-- NAVIGACIJA -->
-    <nav id="navigacija">
-      <div id="brand-name">
-        <a href="index.html">
-          <img src="img/psatha_for_ps-b.png" class="brand-logo" alt="Logo" />
-        </a>
-      </div>
-      <img src="img/logo-text.png" alt="Logo text" id="logo-text" />
-      <div id="navbar">
-        <ul>
-          <li class="primary-font">
-            <a href="index.html" class="nav-link active">Početna</a>
-          </li>
-          <li class="primary-font">
-            <a href="about.html" class="nav-link">O Nama</a>
-          </li>
-          <li class="primary-font">
-            <a href="menu.html" class="nav-link">Meni</a>
-          </li>
-          <li class="primary-font">
-            <a href="gallery.html" class="nav-link">Galerija</a>
-          </li>
-          <li class="primary-font">
-            <a href="author.html" class="nav-link">Autor</a>
-          </li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </nav>
-    <!-- SHOWCASE -->
-    <div id="showcase">
-      <div class="showcase-wrap primary-font text-center">
-        <h1 class="secondary-color showcase-text">Psatha</h1>
-        <p class="secondary-color">
-          Psatha je restoran autorske kuhinje sa akcentom na svežim i
-          kvalitetnim namirnicama.
-        </p>
-        <div class="mt-3">
-          <a href="menu.html" class="btn-primary" target="blank"
-            >Pogledaj naš meni</a
-          >
-        </div>
-      </div>
-      <a href="#about"><i class="fas fa-arrow-down fa-3x primary-color"></i></a>
+  <body class="about-bg">
+    <div class="dark-overlay"></div>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <img src="img/logo-transparent.png" alt="" />
     </div>
-    <!-- ABOUT -->
-    <div id="about">
-      <div class="container text-center">
-        <small class="primary-font info-color">PSATHA</small>
-        <h1 class="primary-font">NASA PRIČA</h1>
-        <p class="primary-font">
-          Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
-          san i napravi svoj restoran.
-        </p>
-        <div id="about-images">
-          <img src="img/cook.jpg" alt="cook" />
-          <img src="img/home-photo.jpeg" alt="dish" />
-          <div class="clear"></div>
+    <!-- OVERLAY NAV -->
+    <div id="side-nav" class="d-lg-none">
+      <div class="container side-container" id="sideNavWrap"></div>
+    </div>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark primary-font p-0 w-100 position-absolute"
+    ></nav>
+    <!-- CAROUSEL -->
+    <div id="carousel">
+      <div
+        id="carousel-slider"
+        class="carousel slide"
+        data-bs-interval="3000"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" id="sliderRender">
+          <!-- RENDER HERE -->
         </div>
-        <small class="primary-font info-color">ZARKO JOVIC</small>
-        <h1 class="hand-writing">Z.Jovic</h1>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-slider"
+          data-bs-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span
+            class="iconify h1"
+            data-icon="mdi-light:arrow-left-circle"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-slider"
+          data-bs-slide="next"
+        >
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span
+            class="iconify h1"
+            data-icon="mdi-light:arrow-left-circle"
+            data-rotate="180deg"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <!-- INGREDIENTS -->
-    <div id="ingredients" class="bac">
+    <!-- COVER ABOUT -->
+    <div
+      id="cover"
+      class="d-flex justify-content-center position-relative align-items-center"
+    >
+      <div class="cover-img">
+        <img src="img/logo-transparent-cut.png" alt="logo" />
+      </div>
       <div class="container">
-        <div class="ingredients-wrap">
-          <small class="primary-font">PSATHA</small>
-          <h1 class="primary-font">SASTOJCI</h1>
-          <p class="primary-font">
-            Za najpuniji i najsočniji ukus tu su uvek najsvežije namirnice koje
-            nabavljamo svaki dan iz tek ubranih bašta naših vrednih
-            zemljoradnika.
-          </p>
-          <div class="mt-5">
-            <a class="btn-primary" href="menu.html">Pogledaj naš meni</a>
+        <div class="cover-text">
+          <h5 class="primary-font text-muted text-center">informacije</h5>
+          <h1 class="primary-font text-white display-2 text-center my-0">
+            ko smo<span> mi</span>
+          </h1>
+          <div class="w-100 d-flex justify-content-center">
+            <img src="img/marker-3.png" class="w-150 mb-3" alt="marker" />
           </div>
         </div>
-        <div class="ingredients-wrap">
-          <img src="img/ingredients.jpg" alt="ingredients" />
-        </div>
-        <div class="clear"></div>
       </div>
     </div>
-    <!-- QUOTE -->
-    <div id="quote">
-      <div class="dark-overlay"></div>
-      <div class="container">
-        <p class="text-white primary-font text-center">
-          Ništa ne spaja ljude kao dobra hrana i nezaboravan ambijent kod nas!
-          <br />
-          Dodji i uveri se sam!
-        </p>
-      </div>
-    </div>
-    <!-- MENU -->
-    <div class="bg-secondary menu">
-      <div class="container text-center">
-        <small class="primary-font info-color">PSATHA</small>
-        <h1 class="primary-font">GLAVNA JELA</h1>
-        <p class="primary-font">
-          Uz odabir tradicionalnih recepata koje usavršavamo, naša glavna jela
-          su rezultat ljubavi prema finoj domaćoj kuhinji i brižljivo odabranim
-          namirnicama.
-        </p>
-        <div class="menu-wrap">
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              OMLET
-              <hr />
-              <p>3 jaja, šunka, sir</p>
-            </div>
-            <div class="dish-price primary-font">3.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              BIFTEK
-              <hr />
-              <p>Biftek, Piko de galo, avokado krem</p>
-            </div>
-            <div class="dish-price primary-font">20.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              BURGER
-              <hr />
-              <p>Juneće meso, krastavici, sir, iceberg salata</p>
-            </div>
-            <div class="dish-price primary-font">5.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              POHOVANA PILETINA
-              <hr />
-              <p>Piletina pohovana u tropskim začinima, 2 umaka po izboru</p>
-            </div>
-            <div class="dish-price primary-font">8.00$</div>
-            <div class="clear"></div>
-          </div>
+    <!-- ABOUT TEXT -->
+    <div id="about-text">
+      <div class="container-fluid">
+        <div class="row py-sm-4 py-3" id="aboutBlockOne"></div>
+        <div id="about-toggle" data-aos="fade-up">
+          <div class="circle"></div>
+          <div id="aboutBlockTwo" class="row py-sm-4 py-3 about-row-2"></div>
         </div>
-        <div class="menu-wrap">
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              CEZAR SALATA
-              <hr />
-              <p>Zelena salata, tzaztiki sos, piletina, brusketi</p>
-            </div>
-            <div class="dish-price primary-font">3.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              PIZZA
-              <hr />
-              <p>Šunka, pelat, pečurke, kačkavalj</p>
-            </div>
-            <div class="dish-price primary-font">10.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              SUSHI
-              <hr />
-              <p>Pirinač, riba, povrće, soja sos</p>
-            </div>
-            <div class="dish-price primary-font">9.00$</div>
-            <div class="clear"></div>
-          </div>
-          <div class="dish-wrap">
-            <div class="dish-info primary-font">
-              BURRITO
-              <hr />
-              <p>
-                Pirinač, pinto pasulj, pico de gallo, govedje meso, pikantni
-                majonez
-              </p>
-            </div>
-            <div class="dish-price primary-font">6.00$</div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
     </div>
     <!-- FEATURES -->
-    <div id="features">
+    <div id="features" class="py-sm-5 py-0">
       <div class="container">
-        <div class="feature text-center">
-          <img src="img/ingredients-1.jpg" alt="NAMIRNICE 1" />
-          <div class="text-center primary-font">
-            <p class="feature-title">SVEŽE NAMIRNICE</p>
-            <p class="info-color">
-              Svaki dan samo za vas spremamo najbolje namirnice.
-            </p>
+        <div class="cover-text">
+          <h5 class="primary-font text-muted text-center">usluge</h5>
+          <h1 class="primary-font text-white display-2 text-center my-0">
+            šta mi <span> radimo</span>
+          </h1>
+          <div class="w-100 d-flex justify-content-center">
+            <img src="img/marker-3.png" class="w-150 mb-3" alt="marker" />
           </div>
         </div>
-        <div class="feature text-center">
-          <img src="img/ingredients-2.jpg" alt="NAMIRNICE 2" />
-          <div class="text-center primary-font">
-            <p class="feature-title">DOSTAVA</p>
-            <p class="info-color">
-              Radimo dostavu po celom gradu svakim danom osim nedeljom.
-            </p>
-          </div>
-        </div>
-        <div class="feature text-center">
-          <img src="img/ingredients-3.jpg" alt="NAMIRNICE 3" />
-          <div class="text-center primary-font">
-            <p class="feature-title">DIJETE</p>
-            <p class="info-color">
-              Imamo jela i menije za šest različitih vrsta ishrane uključujući i
-              vegansku.
-            </p>
-          </div>
-        </div>
-        <div class="feature text-center">
-          <img src="img/ingredients-4.jpg" alt="NAMIRNICE 4" />
-          <div class="text-center primary-font">
-            <p class="feature-title">ORGANSKI</p>
-            <p class="info-color">
-              Sve naše namirnice su 100% organske bez GMO dodataka.
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row" id="features-wrap"></div>
       </div>
     </div>
-    <!-- RESERVATIONS -->
-    <div id="reservation">
-      <div class="dark-overlay"></div>
-      <div class="container text-center">
-        <small class="primary-font info-color">PSATHA</small>
-        <h1 class="primary-font">REZERVACIJE</h1>
-        <p class="primary-font">
-          Rezervišite svoje mesto u našem restoranu već danas! <br />
-          Samo sa par jednostavnih klikova. <br />
-        </p>
 
-        <div id="form-wrap">
-          <form action="index.php" method="get">
-            <div class="form-split">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="IME"
-              /><input type="date" name="date" id="r-date" />
-              <input
-                type="number"
-                name="seats"
-                placeholder="BROJ MESTA"
-                id="seats"
-              />
-            </div>
-            <div class="form-split">
-              <input
-                type="number"
-                placeholder="BROJ TELEFONA"
-                name="phone"
-                id="phone"
-              /><input type="time" name="time" id="time" />
-              <input
-                type="email"
-                placeholder="E-MAIL"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="clear"></div>
-            <textarea
-              name="info"
-              id="info"
-              cols="30"
-              placeholder="DODATNE INFORMACIJE"
-              rows="10"
-            ></textarea>
-            <div class="mt-5">
-              <a href="#" class="btn-primary mt-5">RESERVIŠI</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- CHEF -->
-    <div id="chef">
-      <div class="chef-wrap">
-        <small class="primary-font">PSATHA</small>
-        <h1 class="primary-font">NAŠ ŠEF KUHINJE</h1>
-        <p class="primary-font text-muted mt-1">
-          Kao našeg glavnog odgovornogu kuhinji dolazi nam čovek iz zemlje
-          izlazećeg sunca - Taj Li. Preko 20 godina radnog iskustva u
-          najprestižnijim restoranima širom sveta, sada je sa nama da podeli
-          najprefinjenije ukuse i tajne koje je otkrio tokom svoje karijere.
-        </p>
-        <div class="mt-5">
-          <a class="btn-primary" href="menu.html">POGLEDAJ NAŠ MENI</a>
-        </div>
-      </div>
-      <div class="chef-wrap">
-        <img src="img/chef2.png" alt="main chef" />
+    <!-- BRANDS -->
+    <div id="brands">
+      <div class="dark-overlay"></div>
+      <div class="container">
+        <div class="row" id="brands-wrap"></div>
       </div>
     </div>
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer class="p-sm-5 pb-sm-1 px-md-1 p-3 pb-1">
       <div class="container">
-        <div class="primary-font footer-col">
-          <p class="text-white f-head">KONTAKT</p>
-          <p class="footer-text">
-            <i class="fas fa-phone"> </i> +381 69 1234500
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-envelope"> </i>
-            zarko&#46;jovic&#46;20&#46;21&#64;gmail&#46;com
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-home"> </i> Beograd, Srbija
-          </p>
-          <p class="footer-text">
-            <i class="fas fa-graduation-cap"> </i> Visa ICT - IT
-          </p>
-        </div>
-        <div class="primary-font footer-col">
-          <img src="img/logo-text.png" class="footer-image" alt="footer-logo" />
-          <p class="footer-text text-center">
-            Sve je počelo 2020. kada je jedan mladi momak odlučio da sledi svoj
-            san i napravi svoj restoran. Za najpuniji i najsočniji ukus tu su
-            uvek najsvežije namirnice koje nabavljamo svaki dan iz tek ubranih
-            bašta naših vrednih zemljoradnika.
-          </p>
-        </div>
-
-        <div class="primary-font footer-col">
-          <p class="text-white text-end f-head">KORISNI LINKOVI</p>
-          <a href="index.html" class="footer-text">Pocetna</a>
-          <a href="about.html" class="footer-text">O nama</a>
-          <a href="menu.html" class="footer-text">Meni</a>
-          <a href="gallery.html" class="footer-text">Galerija</a>
-          <a href="author.html" class="footer-text">Autor</a>
-        </div>
-        <div class="clear"></div>
-        <div id="social-media" class="text-center text-white">
-          <a class="text-white" target="blank" href="https://facebook.com"
-            ><i class="fab fa-facebook-square"></i
-          ></a>
-          <a class="text-white" target="blank" href="sitemap.xml"
-            ><i class="fas fa-sitemap"></i
-          ></a>
-          <a class="text-white" target="blank" href="rss.xml"
-            ><i class="fas fa-rss"></i
-          ></a>
-          <a
-            class="text-white"
-            target="blank"
-            href="https://instagram.com/jovic_zarko"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-        <div class="text-center f-copy text-white primary-font">
-          &copy; 2021 PSATHA
+        <div class="row" id="footerInfo"></div>
+        <hr class="text-white" />
+        <div class="row">
+          <div class="col-sm-6 social-footer">
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="entypo-social:facebook"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none"
+              ><span class="iconify" data-icon="bi:youtube"></span>
+            </a>
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span class="iconify" data-icon="el:linkedin"></span>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-end copyright text-muted primary-font">
+              &copy; <span id="year"></span> Wedia, All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/main.js"></script>
   </body>
 </html>
